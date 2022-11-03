@@ -6,20 +6,13 @@ Algoritmo "semnome"
 // Data atual  : 02/11/2022
 Var
    // Seção de Declarações das variáveis
-   idade: real;
-
+   n, numero: inteiro;
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
-   escreva("digite sua idade:")
-   leia(idade)
+   escreval("escolha um numero pra ver a tabuada dele")
+   leia(numero)
+   para n de 1 ate 10 faca
+      escreval(n, " x ", numero, " = ", n * numero)
+   fimpara
 
-   se(idade<18) entao
-      escreva("voce tem menos de 18 anos")
-   senao
-      se((idade>18)e(idade<60))entao
-         escreva("voce é adulto")
-      senao(idade>60)entao
-         escreva("voce é idoso")
-      fimse
-   fimse
 Fimalgoritmo

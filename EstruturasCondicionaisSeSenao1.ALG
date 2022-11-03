@@ -13,34 +13,31 @@ Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
    escreva("Seu nome: ")
    leia(nome)
+
    escreva("Seu peso: ")
    leia(peso)
+
    escreva("Sua altura: ")
    leia(altura)
 
    imc<-(peso/(altura*altura))
 
-   escreva("Você ", nome, " tem altura ", altura, " e peso ", peso, " e seu IMC é ", imc)
-
-   se imc <19 entao
-      escreval("Você está abico do peso")
+   escreva("Você ", nome, " tem altura ", altura, " e peso ", peso, " e seu IMC é ", imc, " e você está ")
+   se(imc < 19) entao
+      escreval("Abaixo do peso")
    senao
-      se 19<= imc <25 entao
-         escreval("Você está no peso normal")
+      se(imc >= 19) e (imc < 25) entao
+         escreval("Peso normal")
       senao
-         se imc 25=<30 entao
-            escreval("Você está com sobrepeso")
+         se(imc >= 25) e (imc < 30) entao
+            escreval("Sobrepeso")
          senao
-            se imc 30=<40 entao
-               escreval("Você está com obesidade tipo 1")
+            se(imc >= 30) e (imc < 40) entao
+               escreval("Obsedidade Tipo 1")
             senao
-               se imc >=40 entao
-                  escreval("Você está com obesidade tipo 2")
-               senao
-               fimse
+               escreval("Obesidade Mórbida")
             fimse
          fimse
       fimse
    fimse
-
 Fimalgoritmo

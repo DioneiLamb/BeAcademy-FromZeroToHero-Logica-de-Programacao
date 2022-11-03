@@ -6,20 +6,14 @@ Algoritmo "semnome"
 // Data atual  : 02/11/2022
 Var
    // Seção de Declarações das variáveis
-   idade: real;
-
+   numero: inteiro;
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
-   escreva("digite sua idade:")
-   leia(idade)
-
-   se(idade<18) entao
-      escreva("voce tem menos de 18 anos")
-   senao
-      se((idade>18)e(idade<60))entao
-         escreva("voce é adulto")
-      senao(idade>60)entao
-         escreva("voce é idoso")
+   escreval("apresentando o mulltiplo de 2 ente 0 e 100")
+   para numero de 0 ate 100 faca
+      se (numero % 2 = 0) entao //se resto do numero dividido por 2 for igual a 0
+      escreval(numero)
       fimse
-   fimse
+   fimpara
+
 Fimalgoritmo
