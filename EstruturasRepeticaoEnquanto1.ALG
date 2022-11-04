@@ -16,7 +16,4 @@ Inicio
       escreval(n, " x ", numero, " = ", n * numero)
       n <- n+1
    fimenquanto
-   escreva("Continue após o enquanto")
-   
-   
 Fimalgoritmo
