@@ -29,8 +29,9 @@ Inicio
       leia(fone[i])
    fimpara
    escreval()
+   escreval("## mostrando os dados cadastrados ##")
    para i <- 1 ate 5 faca
-      escreval("## mostrando os dados cadastrados ##")
+
       escreval()
       escreval("dados do " , i , "º cliente: ", nome[i] , " / CPF >", cpf[i] , " / RG >", rg[i] , " / endereco>", endereco[i] , " / telefone >", fone[i])
    fimpara

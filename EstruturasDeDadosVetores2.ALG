@@ -7,35 +7,33 @@ Algoritmo "semnome"
 
 Var
    // Seção de Declarações das variáveis
-   aluno: vetor[1..3] de caractere //cadastro3 alunos
-   nota: vetor[1..3 , 1..2] de real //recebo 2 notas para cada 1 dos 3 alunos
-   media: real //indice do vetor
-   linha, coluna: inteiro
+   aluno: caractere
+   nota: vetor[1..2] de inteiro //recebo 2 notas
+   media: real
 
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
+   // cadastrando o aluno
+   escreval("digite o nome do aluno:")
+   leia(aluno)
 
-   para linha <- 1 ate 3 faca //laço do cadastro das linhas
-      escreval("digite o nome do ", linha , "º aluno")
-      leia(aluno[linha])
+   // recebendo as notas
+   escreval("digite a 1ª nota do aluno:")
+   leia (nota[1])
+   escreval("digite a 2ª nota do aluno:")
+   leia (nota[2])
 
-      para coluna <- 1 ate 2 faca //laço de cadastro das colunas de cada aluno
-         escreval("digite a " , coluna , "ª nota do aluno " , aluno[linha])
-         leia (nota[linha , coluna])
+   //calculando a méida
+   media <- (nota[1] + nota[2]) / 2
 
+   //dando o resultado final ao aluno
+   escreval("o aluno ", aluno, " teve média de nota: " , media)
 
-         
-      fimpara //fim cadastro das notas de cada aluno
-   fimpara //fim cadastro das linhas
+   // testando se aprovado
+   se media > 60 entao
+      escreval("Aluno esta aprovado!")
+   senao
+      escreval("Aluno foi reprovado!")
+   fimse
 
-   escreval("### imprimindo a matriz ###")
-
-   para linha <- 1 ate 3 faca //laço da impressão
-      escreval("nome do ", linha,"º aluno: ", aluno[linha] , " e suas notas são:")
-      para coluna <- 1 ate 2 faca //laço das colunas de cada aluno
-      media <- coluna +coluna
-         escreval(coluna , " ª nota: " , nota[linha , coluna])
-      fimpara
-      escreval()
-   fimpara
 Fimalgoritmo
